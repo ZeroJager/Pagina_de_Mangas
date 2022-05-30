@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>ELECTRÓNICA</title> <!---- En esta seccion es el nombre
+        de la pagina (icono) --->
+</head>
+<body>
+    <h1>PAGINA DE PRUEBA</h1> <!---- En esta seccion es el titulo de la
+        pagina y "h1" se asigna ese titulo, es preferible utilizar solo 1--->
+    <br> <!---- los "br" son serparadores de linea -->
+    <p>Un servomotor es un actuador rotativo o motor que permite un 
+        control preciso en términos de posición angular,
+         aceleración y velocidad, capacidades que un motor 
+         normal no tiene. En definitiva, utiliza un motor 
+         normal y lo combina con un sensor para la 
+         retroalimentación de posición.</p> <!-- Los "p" son para los parrafos ya depende
+        de canto se quiera colocar---->
+
+        <h2>Cómo funciona un servomotor</h2>
+        
+    <P>Los servomotores se controlan enviando un pulso 
+        eléctrico de ancho variable, o modulación de 
+        ancho de pulso (PWM), a través del cable de 
+        control. Hay un pulso mínimo, un pulso máximo y
+         una frecuencia de repetición. <br> <!-- los span es para resaltar
+        esa oracion o palabra que se requiera remarcar---> <span style="color:rgb(21, 33, 167)">Un servomotor sólo puede girar 90° 
+            en cualquier dirección para un movimiento total de 180°.) <!---los "style color" es pra cambiar el 
+        color de cualquier texto, que haya sido anteriormente seleccionado con "span"  -->
+         <br> </P>
+         <p>El PWM enviado al motor determina la 
+             posición del eje, y se basa en la
+            duración del pulso enviado a través
+            del cable de control; el rotor girará
+            a la posición deseada. El servomotor espera ver un 
+            pulso cada 20 milisegundos (ms) y la longitud del
+             pulso determinará hasta dónde gira el motor.
+              Por ejemplo, un pulso de 1.5ms hará que el 
+              motor gire a la posición de 90°.
+              Si el tiempo es inferior a 1,5 ms,
+               se mueve en sentido contrario a las 
+               agujas del reloj hacia la posición de 0°,
+                y si el tiempo es superior a 1,5 ms, 
+                el servo girará en sentido de las agujas 
+                del reloj hacia la posición de 180°.</p>
+    <hr>
+
+    <p>La cantidad máxima de fuerza que puede ejercer el servo
+         se denomina par de torsión del servo. 
+         Sin embargo, los servos no mantendrán su 
+         posición para siempre; el pulso de posición 
+         debe repetirse para indicar al servo que se 
+         mantenga en posición.</p>
+
+<!---HIpervinculos--> <!--- el target es para abrir una nueva pestaña
+    sin inteferir con la pestaña anterior --->
+<a target="_blank" href="https://www.youtube.com/watch?v=mk9UkQCeENc"> Video de retroalimentación </a>
+<br>
+<br>
+
+<!--Agregar imagenes---> <!---la imagen se encuentra en la carpeta "imagenes"  para
+referenciar esta con "imagenes/"  -->
+<img src="imagenes/Diagrama-básico-funcionamiento-de-un-servomotor-768x768.png" width="500" height="350" /> <!--"width"  es el
+ancho de la imagen y "height" es el alto de la imagen-->
+
+<br>
+<br>
+<h2>Componentes de un servomotor</h2>
+
+<p>Los servos incluyen tres componentes principales:<br> 
+    * Un motor, un variador (también conocido como amplificador).<br>
+    * Mecanismo de retroalimentación.<br>
+    * Una fuente de alimentación.<br>
+    * Servocontrolador capaz de controlar un solo eje o coordinar el movimiento de varios ejes.</p>
+
+    <p>La retroalimentación es proporcionada
+         normalmente por un codificador o encoder 
+         ya sea interno o externo al motor o por un
+          resolver. En aplicaciones que requieren un
+           posicionamiento muy preciso, se pueden 
+           utilizar dos dispositivos de 
+           retroalimentación: uno en el motor
+            para verificar el rendimiento del motor y
+             otro en la carga para verificar la 
+             posición real de la carga.</p>
+
+<img src="imagenes/Partes-de-un-Servomotor.png" />
+
+<h2>Aplicaciones de los servomotores</h2>
+    <p>Los servomotores se utilizan en aplicaciones que requieren variaciones rápidas de velocidad sin sobre calentar el motor como la robótica industrial, en la fabricación con sistemas de automatización y en aplicaciones de mecanizado de control numérico (CNC) por ordenador. A continuación te enumero algunas de las aplicaciones más comunes de los servos:</p>
+
+<p>*En las industrias se utilizan en máquinas herramienta, embalaje, automatización de fábricas, manipulación de materiales, conversión de impresión, líneas de ensamblaje y muchas otras aplicaciones exigentes: robótica, maquinaria CNC o fabricación automatizada.</p>
+
+<p>*También se utilizan en aviones radio-controlados para controlar la posición y el movimiento de los ascensores.</p>
+
+<p>*Se utilizan en robots debido a su suave encendido y apagado y a su preciso posicionamiento.</p>
+
+<p>*También se utilizan en la industria aeroespacial para mantener el fluido hidráulico en sus sistemas hidráulicos.</p>
+
+<p>*Se utilizan en muchos juguetes controlados por radio.</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<form>   <!--Para la interaccion con el usuario, puede ir en cualquier lado-->
+    <label for="cantidad de oro">Cantidad de oro</label>  <!-- laber es para poener a un lado cualquier texto 
+    que contenga a "input"-->   <!--"for"  indicador del campo-->
+    <input value="oro" id="cantidad de oro" placeholder="cantidad de oro" /> <!--"Input"  para agregar cualquier valor-->  <!--- "id" es para evitar presionar en 
+    recuador de input -->   <!--- "placeholder"  es para poner en semi transparente al texto que debe
+    ir en el cuadro de input-->
+    
+        <!---"value" valores por defecto-->
+
+</form>
+<br>
+<form>
+
+    <label> Archivos </label>
+    <input type="file" />   <!-- "type" es para valores como boton, email, radio, password, chech, etc...-->
+    <br>
+    <br>
+    <br>
+    <label> Ponga la sugerencia </label>
+    <br>
+    <br>
+    <textarea cols="20" rows="10" id="Sugerencia" placeholder="Sugerencia" name="Sugerencia" > Ponga su sugerencia </textarea> <!-- "textarea" es para crear un cuadro donde 
+        se pueda colocar texto, eso si dentro del form --->
+        <!--" cols" son las filas y "rows" las columnas-->
+</form>
+<br>
+<br>
+<form action="/formulario" method="get"
+ >  <!--- "action" es para enviar los datos al servidor -->  <!--"method" es para los metodos-->
+    <label for="cantidad de oro">Cantidad de oro</label>
+    <input type="text"  id="cantidad de oro" name="cantidad de oro" placeholder="cantidad de oro" />
+    <input type="submit" >
+</form>
+<br>
+<br>
+<br>
+<br>
+
+<form> <!--Para etiquetas personalizables, para colocar dentro de boton-->
+<label> Presione aqui para ver el capitulo </label>
+<button type="button" >Capitulo 1  </button> 
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<ul> <!---"ul"  es lista no ordenada-->  <!---"ol" es lista ordenada -->
+    <li> Segmento1 </li>
+    <li> Segmento1 </li>
+    <li> Segmento1 </li>
+</ul> 
+
+<ol>  <!---"ol" es lista ordenada -->
+    <li style="list-style: lower-roman;" > Segmento1 </li>
+    <li> Segmento1 </li>
+    <li> Segmento1 </li>
+</ol> 
+<br>
+<br>
+<br>
+
+<table>  <!--Tablas-->
+    <tr>
+<th> Comandos </th>
+<th> Bits </th>
+<th> Megas </th>
+    </tr>
+
+    <tr>
+        <td> Cisco </td>
+        <td> Nomenclatura </td>
+        <td> Nomenclatura 2 </td>
+    </tr>
+</table>
+</body>
+</html>
